@@ -1,0 +1,26 @@
+POST https://api.duynguyendev.xyz/api/v1/chat
+Content-Type: application/json
+
+{
+
+}
+
+
+###
+POST http://localhost:8080/chat-session/3/message
+Content-Type: application/json
+
+{
+  "sender_id": 1,
+  "receiver_id": 2,
+  "content": "Hello"
+}
+
+###
+GET http://localhost:8080/chat-session/3/messages
+
+###
+GET http://localhost:8080/chat-session/1
+
+###
+POST http://localhost:8080/chat-session/3/last-message/1
